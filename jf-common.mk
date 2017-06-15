@@ -196,6 +196,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8064ab.conf:system/etc/thermal-engine-8064ab.conf
 
+# TWRP
+PRODUCT_COPY_FILES += device/samsung/jf-common/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab
+
 # Wifi
 PRODUCT_PACKAGES += \
     libnetcmdiface \
